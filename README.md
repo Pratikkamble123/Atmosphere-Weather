@@ -1,120 +1,145 @@
-# 🌤️ Weather Dashboard – Hingna
+# 🌦️ Weather Dashboard
 
-A clean, modern, and responsive **Weather Dashboard web app** that shows real‑time weather conditions for a selected city. This project focuses on **UI clarity**, **user experience**, and **useful weather insights** like AQI, hourly forecast, and upcoming days — all in one smooth interface.
+A modern **Weather Dashboard web application** that visualizes real‑time weather data using external APIs. The project focuses on clean UI, smooth charts, and meaningful weather insights like temperature trends and air conditions.
 
-This project is designed to feel simple, human‑friendly, and informative rather than overloaded with data.
+This dashboard is lightweight, fast, and built with a frontend‑first mindset — perfect for learning API integration and data visualization.
 
+## ✨ Key Features
 
-## ✨ Features
-
-* 🌡️ **Live Temperature Display** with weather condition (e.g. Partly Cloudy)
-* 🌍 **City‑based Search** to check weather anywhere
-* ⏰ **Hourly Forecast Graph** for quick trend analysis
-* 📅 **7‑Day Weather Forecast**
-* 🌬️ **Air Quality Index (AQI)** with health suggestion
-* ☀️ **UV Index, Wind Speed, Humidity & Pressure** indicators
-* 📱 **Responsive Design** – works smoothly on desktop & mobile
-* 🎨 **Modern UI** with soft gradients and clean cards
+* 🌍 **City‑based Weather Search**
+* 🌡️ **Real‑time Temperature & Conditions**
+* 📊 **Interactive Weather Charts** (hourly trends)
+* ☁️ **Clear Weather Status Display**
+* ⚡ **Fast Performance with Vite**
+* 🎨 **Minimal & Modern UI**
 
 
-## 🧠 Why This Project?
+## 🧠 Project Purpose
 
-Most weather apps show data — this one explains it.
+This project was built to:
 
-The goal of this project is not just to display weather values, but to:
+* Practice **API integration** using OpenWeatherMap
+* Visualize weather data using **charts**
+* Build a clean and reusable **Vue.js component structure**
+* Create a project suitable for **portfolio and internships**
 
-* Help users **understand today’s conditions**
-* Provide **practical suggestions** (hydration, sunscreen, travel comfort)
-* Keep the interface **minimal and pleasant**
-
-It’s perfect for portfolios, UI inspiration, and frontend practice.
-
+Instead of just showing numbers, the dashboard presents weather data in a simple and understandable way.
 
 
 ## 🛠️ Tech Stack
 
-* **Frontend:** React.js
-* **Styling:** CSS / Tailwind CSS (based on implementation)
-* **Charts:** Chart.js / Recharts (for hourly graph)
-* **API:** Weather API (OpenWeather / similar)
-* **Icons:** Weather & UI icons (SVG / Icon library)
+* **Framework:** Vue.js (with TypeScript)
+* **Build Tool:** Vite
+* **Charts:** Chart.js
+* **API:** OpenWeatherMap API
+* **Language:** TypeScript
+* **Styling:** CSS / Utility‑based styling
+
+## 📁 Project Structure
+
+```
+ATMOSPHERE-WEATHER/
+│
+├── node_modules/
+├── services/              # API service logic
+├── .env.local             # Environment variables
+├── .gitignore
+├── App.tsx                # Root component
+├── constants.tsx          # App constants
+├── index.html             # HTML entry
+├── index.tsx              # App bootstrap
+├── metadata.json          # App metadata
+├── translations.ts        # Text & labels
+├── types.ts               # TypeScript types
+├── vite.config.ts         # Vite configuration
+├── tsconfig.json
+├── package.json
+├── package-lock.json
+└── README.md
+```
 
 
-## 🚀 How to Run the Project Locally
+## 🚀 Getting Started
 
-1. **Clone the repository**
+Follow these steps to run the project locally:
 
-   ```bash
-   git clone https://github.com/your-username/weather-dashboard.git
-   ```
+### 1️⃣ Clone the Repository
 
-2. **Navigate to project folder**
+```bash
+git clone https://github.com/your-username/weather-dashboard.git
+```
 
-   ```bash
-   cd weather-dashboard
-   ```
+### 2️⃣ Go to Project Directory
 
-3. **Install dependencies**
+```bash
+cd ATMOSPHERE-WEATHER
+```
 
-   ```bash
-   npm install
-   ```
+### 3️⃣ Install Dependencies
 
-4. **Start the development server**
+```bash
+npm install
+```
 
-   ```bash
-   npm start
-   ```
+### 4️⃣ Setup Environment Variables
 
-5. Open your browser and visit:
+Create a file named `.env.local` in the root directory:
 
-   ```
-   http://localhost:3000
-   ```
+```
+VITE_OPENWEATHER_API_KEY=your_api_key_here
+```
 
+### 5️⃣ Start Development Server
 
-Make sure the API key has access to:
+```bash
+npm run dev
+```
 
-* Current Weather
-* Forecast
-* Air Quality Data
+Open your browser at:
 
-
-## 📸 UI Preview
-
-The interface includes:
-
-* A large temperature focus section
-* Informational cards for today’s perspective
-* AQI with health risk label
-* Smooth hourly temperature curve
-* Minimal weekly forecast list
-
-(Designed to look calm, readable, and professional)
+```
+http://localhost:5173
+```
 
 
-## 🧪 Future Improvements
+## 🔑 API Used
 
-* 🌙 Dark mode toggle
+**OpenWeatherMap API**
+
+* Current Weather Data
+* Forecast Data
+
+Make sure your API key has access to required endpoints.
+
+
+## 📸 UI Overview
+
+* Card‑based layout for weather details
+* Clean typography and spacing
+* Smooth chart animations for better readability
+
+Designed to be simple, focused, and visually pleasant.
+
+
+## 🧪 Possible Enhancements
+
+* 🌙 Dark / Light mode toggle
 * 📍 Auto‑detect user location
-* 🔔 Weather alerts & notifications
-* 📊 Historical weather comparison
-* 📱 PWA support for mobile install
-
-
+* 🔔 Weather alerts
+* 📱 Mobile‑first optimizations
+* 📊 Multi‑day chart comparison
 
 ## 👨‍💻 Author
 
 **Pratik Kamble**
-Frontend Developer | Web & UI Enthusiast
+Frontend Developer | Vue & Web Enthusiast
 
-If you like this project, feel free to ⭐ star the repo and share feedback.
-
+If you found this project helpful, consider starring ⭐ the repository.
 
 ## 📄 License
 
-This project is open‑source and available under the **MIT License**.
+This project is licensed under the **MIT License**.
 
 
 
-> *Weather should feel simple. This project makes sure it does.* ☁️
+> *Simple weather data. Clear visual insights.* 🌤️
