@@ -1,0 +1,7 @@
+{
+  "name": "Atmosphere Weather",
+  "description": "A human-centric, calm weather dashboard providing real-time forecasts, air quality insights, and personalized health suggestions using Gemini AI.",
+  "requestFramePermissions": [
+    "geolocation"
+  ]
+}
